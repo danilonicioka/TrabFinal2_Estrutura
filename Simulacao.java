@@ -21,6 +21,7 @@ public class Simulacao {
         Aluno a4 = new Aluno("Meier");
         Aluno a5 = new Aluno("Oscar");
         
+        //Adiciona alunos à lista
         lc.adiciona(a0);
         lc.adiciona(a1);
         lc.adiciona(a2);
@@ -28,6 +29,7 @@ public class Simulacao {
         lc.adiciona(a4);
         lc.adiciona(a5);
         
+        //Imprime a sequência formada
         lc.sequencia();
         
     }
