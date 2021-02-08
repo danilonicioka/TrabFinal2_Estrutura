@@ -1,4 +1,4 @@
-package problemas.TrabFinal2_Estrutura;
+package problemas.TrabFinal2_Estrutura.Q_Pilha;
 
 public class EstruturaEstatica<T> {
 //superclasse base para classe Fila e Pilha
