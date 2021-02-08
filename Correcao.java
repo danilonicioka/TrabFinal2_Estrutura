@@ -33,22 +33,32 @@ public class Correcao {
             op = input.nextInt();
             switch (op) {
                 case 1:
-                    System.out.print("\nInforme a nota de " + entregues.primeiro().getAluno() + ": ");
-                    double nota = input.nextDouble();
-                    entregues.primeiro().setNota(String.valueOf(nota));
-                    if (nota >= 7) {
-                        entregues.primeiro().setEstado("Aprovado");
+                    if (!entregues.vazia()) {
+                        System.out.print("\nInforme a nota de " + entregues.primeiro().getAluno() + ": ");
+                        double nota = input.nextDouble();
+                        entregues.primeiro().setNota(String.valueOf(nota));
+                        if (nota >= 7) {
+                            entregues.primeiro().setEstado("Aprovado");
+                        } else {
+                            entregues.primeiro().setEstado("Reprovado");
+                        }
+                        System.out.println("Atividade Corrigida\n");
+                        entregues.desenfileira();
                     } else {
-                        entregues.primeiro().setEstado("Reprovado");
+                        System.out.println("\nNão há atividades para corrigir\n");
                     }
-                    entregues.desenfileira();
                     break;
                 case 2:
                     System.out.print("\nInforme o nome do aluno: ");
                     entregues.enfileira(new Atividade(input.next()));
+                    System.out.println();
                     break;
                 case 3:
-                    System.out.println("\n"+entregues+"\n");
+                    if (!entregues.vazia()) {
+                        System.out.println("\n" + entregues + "\n");
+                    } else {
+                        System.out.println("\nNão há atividades para corrigir\n");
+                    }
                     break;
                 case 0:
                     break;
