@@ -18,7 +18,7 @@ public class Livraria {
         Pilha<Livro> pilha3 = new Pilha<>();
 
         //cada pilha iniciará com 5 livros
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 0; i < 5; i++) {
             pilha1.empilha(new Livro("Livro1", "Autor1", 1, 2001));
             pilha2.empilha(new Livro("Livro2", "Autor2", 2, 2002));
             pilha3.empilha(new Livro("Livro3", "Autor3", 3, 2003));
