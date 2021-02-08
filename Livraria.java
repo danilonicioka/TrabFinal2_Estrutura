@@ -10,6 +10,7 @@ public class Livraria {
          Programa que registra o estoque de livros diferentes em uma pequena loja
          Cada pilha será do mesmo livro e terá capacidade "ilimitada" dentro do programa
          Para um novo livro, basta declarar uma nova pilha e aumentar os casos de switch em selecionar pilha
+         Para mais detalhes, confira o relatório.
          */
         Scanner input = new Scanner(System.in);
 
