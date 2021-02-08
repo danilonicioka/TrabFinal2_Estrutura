@@ -13,6 +13,7 @@ public class Correcao {
          e a correção, quando uma atividade for desenfileirada
          Supôe-se que há um programa auxiliar que registrará as atividades entregues de forma automática,
          mas há como registrar manualmente no programa, mas só poderá incluir na fila e posteriormente corrigir
+         Para mais detalhes, confira o relatório.
          */
         Scanner input = new Scanner(System.in);
         Fila<Atividade> entregues = new Fila<>();
