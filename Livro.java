@@ -14,39 +14,8 @@ class Livro {
 
     @Override
     public String toString() {
-        return "Livro{" + "nome=" + getNome() + ", autor=" + getAutor() + ", isbn=" + getIsbn() + ", ano=" + getAno() + '}';
+        return "Livro{" + "nome=" + nome + ", autor=" + autor + ", isbn=" + isbn + ", ano=" + ano + '}';
     }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getAutor() {
-        return autor;
-    }
-
-    public void setAutor(String autor) {
-        this.autor = autor;
-    }
-
-    public int getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(int isbn) {
-        this.isbn = isbn;
-    }
-
-    public int getAno() {
-        return ano;
-    }
-
-    public void setAno(int ano) {
-        this.ano = ano;
-    }
+    
     
 }
