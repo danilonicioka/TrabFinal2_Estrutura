@@ -1,8 +1,10 @@
 package lista;
 
 public class Celula {
-
-    private Celula anterior;
+    
+    /*
+     Classe que controla a operação de uma lista encadeada
+    */
     private Celula proxima;
     private Object info;
     
@@ -20,13 +22,6 @@ public class Celula {
         return info.toString();
     }
     
-    public Celula getAnterior() {
-        return anterior;
-    }
-
-    public void setAnterior(Celula anterior) {
-        this.anterior = anterior;
-    }
 
     public Celula getProxima() {
         return proxima;
@@ -43,6 +38,5 @@ public class Celula {
     public void setInfo(Object info) {
         this.info = info;
     }
-    
     
 }
