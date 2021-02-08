@@ -77,7 +77,7 @@ public class Livraria {
                             System.out.print("\nInforme a quantidade que deseja retirar: ");
                             int qnt = input.nextInt();
                             if (qnt < pilha1.getTamanho()) {
-                                for (int i = 0; i < qnt; i++) {
+                                for (int i = 0; i < qnt-1; i++) { //qnt-1 para que tenha sempre pelo menos 1 livro no estoque
                                     pilha1.desempilha();
                                 }
                             } else {
@@ -88,7 +88,7 @@ public class Livraria {
                             System.out.print("\nInforme a quantidade que deseja retirar: ");
                             qnt = input.nextInt();
                             if (qnt < pilha2.getTamanho()) {
-                                for (int i = 0; i < qnt; i++) {
+                                for (int i = 0; i < qnt-1; i++) {
                                     pilha2.desempilha();
                                 }
                             } else {
@@ -99,7 +99,7 @@ public class Livraria {
                             System.out.print("\nInforme a quantidade que deseja retirar: ");
                             qnt = input.nextInt();
                             if (qnt < pilha3.getTamanho()) {
-                                for (int i = 0; i < qnt; i++) {
+                                for (int i = 0; i < qnt-1; i++) {
                                     pilha3.desempilha();
                                 }
                             } else {
